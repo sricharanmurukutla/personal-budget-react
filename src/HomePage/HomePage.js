@@ -122,7 +122,7 @@ function HomePage() {
       .enter()
       .append("polyline");
 
-    polyline.transition().duration(1000)
+    polyline.transition().duration(2000)
       .attr("points", function (d) {
         var pos = outerArc.centroid(d);
         pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
